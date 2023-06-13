@@ -1,4 +1,4 @@
-{% set version = "1.1-9" %}
+{% set version = "1.2-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bamlss_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bamlss/bamlss_{{ version }}.tar.gz
-  sha256: 0c25ebeef5b27f4b32a449b80158c87a954b51e2ca8429112bb929049a7c8cfe
+  sha256: 6a0b95643a66b76bbb948ea4d7c1084314b37409f942da74ff21b6dd0f706a97
 
 build:
   merge_build_host: true  # [win]
