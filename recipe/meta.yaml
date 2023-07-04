@@ -36,6 +36,7 @@ requirements:
     - r-matrix
     - r-coda
     - r-colorspace
+    - r-distributions3 >=0.2.1
     - r-mgcv
     - r-mvtnorm
     - r-sp
@@ -50,6 +51,7 @@ requirements:
     - r-matrix
     - r-coda
     - r-colorspace
+    - r-distributions3 >=0.2.1
     - r-mgcv
     - r-mvtnorm
     - r-sp
