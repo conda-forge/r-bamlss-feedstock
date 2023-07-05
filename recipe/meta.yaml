@@ -1,4 +1,4 @@
-{% set version = "1.2-0" %}
+{% set version = "1.2-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bamlss_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bamlss/bamlss_{{ version }}.tar.gz
-  sha256: 6a0b95643a66b76bbb948ea4d7c1084314b37409f942da74ff21b6dd0f706a97
+  sha256: 3759fa873fe1ef0f16acc29758589e04859f321901681fdde0d6c7b5c72037c6
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,6 +36,7 @@ requirements:
     - r-matrix
     - r-coda
     - r-colorspace
+    - r-distributions3 >=0.2.1
     - r-mgcv
     - r-mvtnorm
     - r-sp
@@ -50,6 +51,7 @@ requirements:
     - r-matrix
     - r-coda
     - r-colorspace
+    - r-distributions3 >=0.2.1
     - r-mgcv
     - r-mvtnorm
     - r-sp
