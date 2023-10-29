@@ -3,6 +3,7 @@ About r-bamlss-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bamlss-feedstock/blob/main/LICENSE.txt)
 
+
 About r-bamlss
 --------------
 
@@ -11,6 +12,7 @@ Home: http://www.bamlss.org/
 Package license: GPL-2.0-or-later
 
 Summary: Infrastructure for estimating probabilistic distributional regression models in a Bayesian framework. The distribution parameters may capture location, scale, shape, etc. and every parameter may depend on complex additive terms (fixed, random, smooth, spatial, etc.) similar to a generalized additive model. The conceptual and computational framework is introduced in Umlauf, Klein, Zeileis (2019) <doi:10.1080/10618600.2017.1407325> and the R package in Umlauf, Klein, Simon, Zeileis (2019) <arXiv:1909.11784>.
+
 About r-bamlss
 --------------
 
