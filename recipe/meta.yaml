@@ -1,6 +1,5 @@
 {% set version = "1.2-4" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-bamlss
@@ -13,8 +12,7 @@ source:
   sha256: 08d6cf53d3cc18eda73645a42186eb8b73a045782698e9823646253b78453ddf
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,7 +45,6 @@ requirements:
     - liblapack
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-formula
     - r-mba
     - r-matrix
