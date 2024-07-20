@@ -1,13 +1,5 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '10.9'
-c_compiler:
-- clang
-c_compiler_version:
-- '16'
 c_stdlib:
-- macosx_deployment_target
-c_stdlib_version:
-- '10.9'
+- vs
 channel_sources:
 - conda-forge
 channel_targets:
@@ -18,13 +10,15 @@ libblas:
 - 3.9 *netlib
 liblapack:
 - 3.9 *netlib
-macos_machine:
-- x86_64-apple-darwin13.4.0
+m2w64_c_compiler:
+- gcc
+m2w64_c_compiler_version:
+- '13'
 pin_run_as_build:
   r-base:
     min_pin: x.x
     max_pin: x.x
 r_base:
-- '4.2'
+- '4.4'
 target_platform:
-- osx-64
+- win-64
