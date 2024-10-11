@@ -1,4 +1,4 @@
-{% set version = "1.2-4" %}
+{% set version = "1.2-5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bamlss_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bamlss/bamlss_{{ version }}.tar.gz
-  sha256: 08d6cf53d3cc18eda73645a42186eb8b73a045782698e9823646253b78453ddf
+  sha256: 8657c7598a5743ad5f8960f38f1a03a67f375268fd47a66b1d67371f5789ef5c
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
